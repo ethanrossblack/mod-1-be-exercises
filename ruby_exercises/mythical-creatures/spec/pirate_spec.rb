@@ -1,5 +1,5 @@
 require 'rspec'
-require './lib/pirate'
+require '../lib/pirate'
 
 RSpec.describe Pirate do
   it 'has a name' do
