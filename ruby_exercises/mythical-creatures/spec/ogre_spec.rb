@@ -1,5 +1,5 @@
-require './spec/spec_helper'
-require './lib/ogre'
+require '../spec/spec_helper'
+require '../lib/ogre'
 
 RSpec.describe Ogre do
   it 'has a name' do
