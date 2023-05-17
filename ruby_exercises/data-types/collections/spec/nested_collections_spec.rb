@@ -8,46 +8,46 @@ RSpec.describe 'Nested Collections' do
     expect(second).to eq([87, 2])
   end
 
-  xit 'test 2' do
+  it 'test 2' do
     coordinates = [[2,5],[87,2],[56,39],[3,46]]
     # Using the coordinates variable defined above
     # Retrive the value 39
-    thirty_nine = _________
+    thirty_nine = coordinates[2][1]
     expect(thirty_nine).to eq(39)
   end
 
-  xit 'test 3' do
+  it 'test 3' do
     coordinates = [[2,5],[87,2],[56,39],[3,46]]
     # Using the coordinates variable defined above
     # set the last coordinates to [6, 55]
-    _________
+    coordinates[-1] = [6,55]
 
     expected = [[2,5],[87,2],[56,39],[6,55]]
     expect(coordinates).to eq(expected)
   end
 
-  xit 'test 4' do
+  it 'test 4' do
     coordinates = [[2,5],[87,2],[56,39],[3,46]]
     # Using the coordinates variable defined above
     # set the second element of the last coordinates
     # to 0
-    ________
+    coordinates[-1][1] = 0
 
     expected = [[2,5],[87,2],[56,39],[3, 0]]
     expect(coordinates).to eq(expected)
   end
 
-  xit 'test 5' do
+  it 'test 5' do
     coordinates = [[2,5],[87,2],[56,39],[3,46]]
     # Using the coordinates variable defined above
     # add the coordinate [4, 14]
-    _________
+    coordinates.push [4,14]
 
     expected = [[2,5],[87,2],[56,39],[3,46],[4, 14]]
     expect(coordinates).to eq(expected)
   end
 
-  xit 'test 6' do
+  it 'test 6' do
     team = {
       pitchers: ["Kenny", "Joan", "Shabaz"],
       fielders: ["Luke", "Chris", "Megan", "Mark", "Mackenzie"],
@@ -55,12 +55,12 @@ RSpec.describe 'Nested Collections' do
     }
     # Using the team variable defined above
     # retrieve all of the pitchers
-    pitchers = _________
+    pitchers = team[:pitchers]
     expected = ["Kenny", "Joan", "Shabaz"]
     expect(pitchers).to eq(expected)
   end
 
-  xit 'test 7' do
+  it 'test 7' do
     team = {
       pitchers: ["Kenny", "Joan", "Shabaz"],
       fielders: ["Luke", "Chris", "Megan", "Mark", "Mackenzie"],
